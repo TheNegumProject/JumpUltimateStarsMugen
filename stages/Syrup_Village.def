@@ -1,0 +1,540 @@
+;========================================================
+;Syrup Village
+;========================================================
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "Syrup Village"
+autor= = ""
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -370
+boundright = 300
+boundhigh = -200
+boundlow = 0
+verticalfollow = .8
+floortension = 80
+tension = 80
+
+[PlayerInfo]
+p1startx = -56
+p1starty = 0
+p1startz = 0
+p1facing = 1
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.6
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 210 ;Regula la altura a la que aparecen los chars 
+zoffsetlink = 30 ;
+autoturn = 1
+resetBG = 1
+hires = 1
+
+[Shadow]
+color = 80,80,80
+yscale = 0.2
+
+[Music]
+ bgmusic =sound/Castlevania Judgment - Clockwork.mp3
+ bgvolume =255
+
+[BGdef]
+spr = Syrup_Village.sff
+debugbg = 1
+
+;=======================================
+[BG 1 cielo]
+type  = normal
+spriteno = 0,0
+layerno= 0
+start = 0,0
+delta = 0.75,1
+mask = 0
+tile = 1, 0
+velocity= 0,0
+
+[BG 4 Sol]
+type  = anim
+actionno = 30
+start = -400,0
+delta = 1, 1
+trans = add
+mask  = 1
+
+
+
+[BG Nube]
+type  = normal
+spriteno = 0, 1
+layerno = 0                
+start = -0, 30
+delta = 1, 1
+trans = Add
+mask  = 1
+velocity = 0.4, 0
+tile  = 1, 0
+tilespacing = 75,0
+;window = 0,0, 319, 239
+
+[BG Nuebes Grupo]
+type  = normal
+spriteno = 0, 2
+layerno = 0                
+start = -0, 60
+delta = 1, 1
+trans = Add
+mask  = 1
+velocity = 0.7, 0
+tile  = 1, 0
+tilespacing = 75,0
+;window = 0,0, 319, 239
+
+
+[BG rocio de marea]
+type  = normal
+spriteno = 10, 0
+layerno = 0
+velocity = -0.1, 0
+start = -1500, 200
+delta = 1.2,1.3
+trans = add
+mask  = 0
+tile  = 1, 0
+
+
+;-------------------------
+
+
+[BG 0 Acantilado 5]
+type  = normal
+spriteno = 2, 4
+layerno = 0                
+start = 350, 200
+delta = 1.6, 1.4
+trans = none
+mask  = 1
+tile  = 0, 0
+
+[BG 0 Acantilado 4]
+type  = normal
+spriteno = 2, 3
+layerno = 0                
+start = 650, 200
+delta = 1.6, 1.4
+trans = none
+mask  = 1
+tile  = 0, 0
+
+
+
+[BG 0 Acantilado 3]
+type  = normal
+spriteno = 2, 2
+layerno = 0                
+start = 500, 200
+delta = 1.6, 1.4
+trans = none
+mask  = 1
+tile  = 0, 0
+
+
+
+
+;------ Mar ----------------------
+
+[BG Mar]
+type  = anim
+actionno = 11
+layerno = 0
+start = 1000, 200
+delta = 1.4,1.4
+mask  = 1
+tile  = 1, 0
+trans = none
+
+
+;----------------------------------
+
+
+
+[BG 0 Acantilado 2]
+type  = normal
+spriteno = 2, 1
+layerno = 0                
+start = 300, 200
+delta = 1.7, 1.7
+trans = none
+mask  = 1
+tile  = 0, 0
+
+
+
+[BG 0 Acantilado 1]
+type  = normal
+spriteno = 2, 0
+layerno = 0                
+start = 250, 250
+delta = 1.85, 1.85
+trans = none
+mask  = 1
+tile  = 0, 0
+
+
+
+
+[BG 0 Bosque]
+type  = normal
+spriteno = 4, 0
+layerno = 0                
+start = 0, 100
+delta = 1.9, 1.9
+trans = none
+mask  = 1
+tile  = 0, 0
+
+
+[BG 0 Kaya House]
+type  = normal
+spriteno = 3, 0
+layerno = 0                
+start = -800, 160
+delta = 1.8, 1.9
+trans = none
+mask  = 1
+tile  = 0, 0
+
+
+
+
+;----- Costa ----------------------
+
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 0
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 1
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 2
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 3
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 4
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 5
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 6
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 7
+layerno = 0               
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 8
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 9
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+[BG 0 Costa Base]
+type  = normal
+spriteno = 1, 10
+layerno = 0                
+start = 0, 530
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 0, 0
+
+
+
+;----------------------------------------------
+
+
+
+
+[BG Marea 1]
+type  = anim
+actionno = 9
+layerno = 0
+start = 210, 200
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+trans = none
+
+
+[BG Bezan Black - Kuro Ship]
+type  = anim
+actionno = 5
+layerno = 0
+start = 900, 375
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+trans = none
+
+
+;[BG resplandor]
+;type        = normal
+;spriteno    = 0,3
+;layerno     = 1
+;start       = -1200,150
+;trans       = add
+;mask        = 1
+;delta       = 3,0
+;ID          = 1
+
+;=======================================
+
+
+;Bezan Black
+[Begin Action 5]
+-1,0, 80,1, 1600
+5,0, 80,1, 3
+5,0, 67,2, 3
+5,0, 56,3, 3
+5,0, 44,4, 3
+5,0, 34,5, 3
+5,0, 26,4, 3
+5,0, 19,3, 3
+5,0, 12,2, 3
+5,0, 5,1, 3
+5,0, 0,0, 3
+5,0, -10,-1, 3
+5,0, -20,-2, 3
+5,0, -35,-3, 3
+5,0, -50,-2, 3
+5,0, -60,-1, 3
+5,0, -68,0, 3
+5,0, -75,1, 3
+5,0, -77,2, 3
+5,0, -86,3, 3
+5,0, -98,4, 3
+5,0, -110,3, 3
+5,0, -125,2, 3
+5,0, -138,1, 3
+5,0, -148,0, 3
+5,0, -155,-1, 3
+5,0, -162,-2, 3
+5,0, -170,-3, 3
+5,0, -175,-4, 3
+5,0, -178,-5, 3
+5,0, -180,-4, 3
+5,0, -190,-3, 3
+5,0, -202,-2, 3
+5,0, -215,-1, 3
+5,0, -227,0, 3
+5,0, -240,1, 3
+5,0, -252,2, 3
+5,0, -260,3, 3
+5,0, -265,4, 3
+5,0, -272,3, 3
+5,0, -277,2, 3
+5,0, -283,1, 3
+5,0, -290,0, 3
+5,0, -295,-2, 3
+5,0, -299,-4, 3
+5,0, -302,-6, 3
+5,0, -304,-5, 3
+5,0, -305,-4, 3
+5,0, -304,-3, 3
+5,0, -303,-2, 3
+5,0, -302,-1, 3
+Loopstart
+5,0, -300,0, 5
+5,0, -300,1, 6
+5,0, -300,2, 8
+5,0, -300,3, 6
+5,0, -300,2, 5
+5,0, -300,1, 4
+
+;Marea 1
+[Begin Action 9]
+9,0, 0,0, 5,, A
+9,1, 0,0, 7,, A
+9,2, 0,0, 10,, A
+9,3, 0,0, 15,, A
+9,4, 0,0, 10,, A
+9,5, 0,0, 7,, A
+9,6, 0,0, 6,, A
+
+
+
+
+
+;Mar
+[Begin Action 11]
+11,0, 0,0, 3,H, A1
+11,1, 0,0, 3,H, A1
+11,2, 0,0, 3,H, A1
+11,3, 0,0, 3,H, A1
+11,4, 0,0, 3,H, A1
+11,5, 0,0, 3,H, A1
+11,6, 0,0, 3,H, A1
+11,7, 0,0, 3,H, A1
+11,8, 0,0, 3,H, A1
+11,9, 0,0, 3,H, A1
+11,10, 0,0, 3,H, A1
+11,11, 0,0, 3,H, A1
+11,12, 0,0, 3,H, A1
+11,13, 0,0, 3,H, A1
+11,14, 0,0, 3,H, A1
+11,15, 0,0, 3,H, A1
+11,16, 0,0, 3,H, A1
+11,17, 0,0, 3,H, A1
+11,18, 0,0, 3,H, A1
+11,19, 0,0, 3,H, A1
+
+
+
+
+[Begin action 30]
+30,0,0,0,5,,A
+30,1,0,0,5,,A
+30,2,0,0,5,,A
+30,3,0,0,5,,A
+30,4,0,0,5,,A
+30,5,0,0,5,,A
+30,6,0,0,5,,A
+30,7,0,0,5,,A
+30,8,0,0,5,,A
+30,9,0,0,5,,A
+30,10,0,0,5,,A
+30,11,0,0,5,,A
+30,12,0,0,5,,A
+30,13,0,0,5,,A
+30,14,0,0,5,,A
+30,15,0,0,5,,A
+30,16,0,0,5,,A
+30,17,0,0,5,,A
+30,18,0,0,5,,A
+30,19,0,0,5,,A
+30,20,0,0,5,,A
+30,21,0,0,5,,A
+30,22,0,0,5,,A
+30,23,0,0,5,,A
+30,24,0,0,5,,A
+30,23,0,0,5,,A
+30,22,0,0,5,,A
+30,21,0,0,5,,A
+30,20,0,0,5,,A
+30,21,0,0,5,,A
+30,22,0,0,5,,A
+30,23,0,0,5,,A
+30,24,0,0,5,,A
+30,25,0,0,5,,A
+30,24,0,0,5,,A
+30,23,0,0,5,,A
+30,22,0,0,5,,A
+30,21,0,0,5,,A
+30,20,0,0,5,,A
+30,19,0,0,5,,A
+30,18,0,0,5,,A
+30,17,0,0,5,,A
+30,16,0,0,5,,A
+30,15,0,0,5,,A
+30,14,0,0,5,,A
+30,13,0,0,5,,A
+30,12,0,0,5,,A
+30,11,0,0,5,,A
+30,10,0,0,5,,A
+30,9,0,0,5,,A
+30,8,0,0,5,,A
+30,7,0,0,5,,A
+30,6,0,0,5,,A
+30,5,0,0,5,,A
+30,4,0,0,5,,A
+30,3,0,0,5,,A
+30,2,0,0,5,,A
+30,1,0,0,5,,A
+30,0,0,0,5,,A
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+﻿[FNT v2]
+
+fntversion = 2,00
+
+name = "SelName"
+
+author = "Roken"
+
+[Def]
+
+Type = truetype
+
+Size = 0,28
+
+Spacing = 1,1
+
+Offset = 0,0
+
+File = SelName.ttf
+
+Blend = 1
+
+; Note: All units are in pixels.
+; Text rendered with truetype fonts may be ASCII or UTF-8

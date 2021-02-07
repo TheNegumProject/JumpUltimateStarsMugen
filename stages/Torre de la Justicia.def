@@ -1,0 +1,364 @@
+;                        EDITED STAGE
+;=============================================================
+;  STAGE INFORMATION :
+;
+;  Resolution : 1280 * 720
+;  Mugen Version : Mugen 1.1 only
+;  Versiondate : Diciembre,2014
+;  Reedicion : Daniel's 
+;
+;=============================================================
+[Info]
+Name = "Torre de la Justicia"
+displayname="The Tower of Justice"
+author="Daniel's" ;ReEdit 
+;original Author = "Team OP OS"
+mugenversion=1.1
+
+;--------------------------------------------------------
+
+; CAMERA!!!
+[camera]
+startx = 0
+starty = 0
+boundleft =40
+boundright = -40
+boundhigh=-460 
+boundlow =0
+verticalfollow = .70
+floortension = 100
+tension =50
+tensionhigh = 160
+tensionlow = 25
+overdrawhigh = 100
+overdrawlow = 100
+cuthigh = 0
+cutlow = 0
+zoomin = .9
+zoomout = .39
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -90          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 90
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+
+;--- Player 3 ---
+p3startx = -120
+p3starty = 0
+p3facing = 1
+
+;--- Player 4 ---
+p4startx =120
+p4starty = 0
+p4facing = -1
+
+
+;--- Common ---
+ ;Don't change these values.
+leftbound = -4000
+rightbound = 4000
+topbound = 120
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 25
+screenright = 25
+
+[StageInfo]
+zoffset = 199
+zoffsetlink = 30 
+autoturn = 1
+resetBG = 1
+localcoord=384,216
+hires = 1
+
+
+
+[Shadow]
+color = 26,26,26
+yscale = .20
+
+[Music]
+bgmusic = sound/Karakuri Defense.mp3
+bgmvolume = 255
+
+
+;---------------------
+
+
+
+[bgdef]
+spr =stages/Torre de la Justicia.sff
+debugbg = 0
+
+;========================================
+;fondo
+;========================================
+
+;Sky
+[BG KD]
+type =normal
+spriteno =0,1
+start = 0,350
+delta = .1,.9
+tile=1,0
+velocity=0.2,0
+
+
+;========================================
+;Puerta de la justicia
+;========================================
+
+;
+[bg Puerta de la justicia]
+type  = normal
+spriteno = 0,3
+start = 0,370
+delta = .2, 1.5
+mask = 1
+scalestart=1.1,1.1
+;;
+;
+[BG nubes3]
+type = normal
+spriteno = 20,1
+start = 0,200
+delta= .3, 1.6
+mask = 1
+tile = 1,0
+velocity = .6, 0
+
+[BG nubes2]
+type = normal
+spriteno = 20,2
+start = 0,150
+delta =.4,1.7
+mask = 1
+tile = 1,0
+velocity = .3, 0
+
+
+
+
+
+
+
+;========================================
+;Torre Enies Lobby
+;========================================
+
+
+[bg Torre flag]
+type  = anim
+actionno = 1
+start = 0,240
+delta = 0.7,1.73
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+scalestart=1.4,1.4
+
+[bg Torre Enies Lobby]
+type  = normal
+spriteno = 3,1
+start = 0,240
+delta =0.7,1.73
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+scalestart=1.4,1.4
+;
+;
+;
+;
+;
+;
+[bg nuvem 1]
+type=normal
+spriteno = 1,0
+start = 200, 200
+delta = 0.65,1.7
+velocity = 0.40,0
+mask = 1
+tilespacing = 100,0
+tile = 1, 0
+trans = addalpha
+alpha=100,256
+
+[bg nuvem 4]
+type=normal
+spriteno = 1,1
+start = -80, 250
+delta = 0.6,1.68
+velocity = 0.5,0
+mask = 1
+tilespacing = 320,0
+tile = 1, 0
+trans = addalpha
+alpha=100,256
+
+[bg nuvem 4]
+type=normal
+spriteno = 1,2
+start = -280, 290
+delta = 0.55,1.65
+velocity = 0.64,0
+mask = 1
+layerno = 0
+tilespacing = 320,0
+tile = 1, 0
+trans = addalpha
+alpha=100,256
+
+
+;========================================
+;A Ground
+;========================================
+;
+[bg Pilares]
+type  = normal
+spriteno = 2,5
+start = 0,320
+delta = 1.07,1.75
+mask = 1
+trans = none
+layerno = 0
+tile = 1, 0
+scalestart=1.2,1.2
+
+
+
+
+[BG  ground]
+type  = parallax
+spriteno = 0,0
+start =0,470
+mask = 1
+delta =1.07,2 
+width = 500,2000
+yscalestart = 150
+yscaledelta = 0.25 
+scalestart=1,1
+tile=1,0
+;
+;
+
+
+
+;
+[BG Makina]
+type = normal
+spriteno = 6,2
+start = 720,317
+delta = 1.3,1.75
+Layerno = 0
+mask = 1
+scalestart=1,1.3
+;
+;;
+[BG Makina 2]
+type = normal
+spriteno = 6,2
+start = -720,317
+delta = 1.3,1.7
+Layerno = 0
+mask = 1
+scalestart=1,1.3
+
+
+
+[BG Bola L]
+type = normal
+spriteno = 6,1
+start = -255,325
+delta =1.31,1.75
+Layerno = 0
+mask = 1
+scalestart=1.1,1.1
+
+
+[BG Bola R]
+type = normal
+spriteno = 6,1
+start = 225,325
+delta =1.31,1.75
+Layerno = 0
+mask = 1
+scalestart=1.1,1.1
+
+
+[BG Bandera]
+type = normal
+spriteno = 6,0
+start = 0,350
+delta = 1.53,1.78
+Layerno = 0
+mask = 1
+scalestart=1.2,1.2
+
+
+
+[BG Bola 3]
+type = normal
+spriteno = 6,1
+start = 580,380
+delta = 1.84,1.85
+Layerno = 0
+mask = 1
+scalestart=1.3,1.3
+
+;;
+;;
+[BG Bola 4]
+type = normal
+spriteno = 6,1
+start = -580,380
+delta =1.84,1.85
+Layerno = 0
+mask = 1
+scalestart=1.3,1.3
+
+
+
+
+;
+[bg Pilares]
+type  = normal
+spriteno = 2,8
+layerno =1
+start = 0,590
+delta = 4.1,2.5
+mask = 1
+scalestart=1.3,1.3
+
+
+
+
+
+
+
+
+
+
+[Begin Action 1]
+4,0, 0,0, 6
+4,1, 0,0, 6
+4,2, 0,0, 6

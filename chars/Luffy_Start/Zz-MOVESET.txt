@@ -1,0 +1,30 @@
+
+A - Punch
+
+B - Kick
+
+C - Gomu Gomu no Mi
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Gomu Gomu no Pistol Shoot
+
+D,DB,B,a - Gomu Gomu no Fuusen
+
+B,DB,D,DF,F,a - Gomu Gomu no Baku Baku
+
+D,DF,F,b - Gomu Gomu no Rocket
+
+D,DB,B,b - Gomu Gomu no Ono
+
+F,DF,D,DB,B,b - Gomu Gomu no Hanabi
+
+D,DF,F,c - Gomu Gomu no Bazooka
+
+D,DB,B,c - Gomu Gomu no Gatling
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b - Gomu Gomu no Storm

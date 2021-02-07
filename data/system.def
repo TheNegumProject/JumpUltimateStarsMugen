@@ -1,0 +1,479 @@
+[Info]
+name = "Jump Ultimate Stars Mugen"
+author = "Roken"
+versiondate = 05,01,2016  
+mugenversion = 1.1        
+localcoord = 1280,720     
+
+[Files]
+spr = system.sff
+snd = system.snd  
+logo.storyboard =
+intro.storyboard =
+select = select.def
+fight = JUSM Lifebar/JUSM Lifebar.def
+font0 = font/infofont.def
+font1 = font/f-6x9.def
+font2 = font/f-6x9.fnt
+font3 = font/jg.fnt
+font4 = font/QOH_BIG.FNT
+font5 = font/JUSM Lifebar Name.fnt
+font6 = font/TeamMenu.def
+font7 = font/VsName.def
+font8 = font/SelName.def
+font9 = font/Roken.def
+
+[Music]
+  ;Music to play at title screen.
+title.bgm = sound/F. T. (Main Menu) - Jump Ultimate Stars.mp3
+title.bgm.volume = 100
+title.bgm.loop =1
+title.bgm.loopstart = 
+title.bgm.loopend = 
+ ;Music to play at char select screen.
+select.bgm = sound/TAKE IT - Jump Ultimate Stars.mp3
+select.bgm.volume = 100
+select.bgm.loop =1
+select.bgm.loopstart =
+select.bgm.loopend = 
+;Music to play at versus screen.
+vs.bgm = sound/Battle Setting - Jump Ultimate Stars.mp3
+vs.bgm.volume = 100
+vs.bgm.loop =1
+vs.bgm.loopstart =
+vs.bgm.loopend = 
+  ;Music to play at victory screen.
+victory.bgm = sound/Winner! - Jump Ultimate Stars.mp3
+victory.bgm.volume = 100
+victory.bgm.loop = 1
+victory.bgm.loopstart =
+victory.bgm.loopend = 
+
+[Title Info]
+fadein.time = 20
+fadeout.time = 20
+menu.pos = 640,660
+menu.item.font = 9,0,0
+menu.item.active.font = 9,0,0
+menu.item.spacing = 0,70
+menu.itemname.arcade = "" ;"A"
+menu.itemname.versus = "" ;"B"
+menu.itemname.teamarcade = "A" ;"C"
+menu.itemname.teamversus = "B" ;"D"
+menu.itemname.teamcoop = "E"
+menu.itemname.survival = "F"
+menu.itemname.survivalcoop = "G"
+menu.itemname.training = "H"
+menu.itemname.watch = "I"
+menu.itemname.options = "J"
+menu.itemname.exit = "K"
+menu.window.margins.y = 60, -10
+menu.window.visibleitems = 1
+menu.boxcursor.visible = 0
+menu.boxcursor.coords = -58,-10,57,2
+cursor.move.snd = 100,0
+cursor.done.snd = 100,1
+cancel.snd = 100,2
+
+[TitleBGdef]
+bgclearcolor = 0,0,0
+
+[TitleBG Background]
+type  = normal
+spriteno = 0,0
+start = 0, 0
+tile = 1,2
+velocity = 0
+mask = 0
+
+;----------------------------
+[Infobox] ;(new in MUGEN 1.0)
+text.font = 0,0,1
+
+;----------------------------
+[Infobox Text] ;(new in MUGEN 1.0)
+
+Welcome to Jump Ultimate Stars M.U.G.E.N
+_
+* Created by Roken
+_
+* Enjoy! :)
+
+;----------------------------
+[ja.Infobox Text] ;(new in MUGEN 1.0)
+M.U.G.E.N 1.1???????????????????????!
+_
+?????????data/mugen1/system.def????????
+
+;----------------------------
+[Select Info]
+fadein.time = 20
+fadeout.time = 20
+rows =10
+columns =51
+wrapping =1
+pos = 1700,900
+showEmptyBoxes = 0
+moveOverEmptyBoxes = 0
+cell.size =46,46
+cell.spacing =4 
+cell.bg.spr =150,0
+cell.random.spr =180,0
+cell.random.switchtime =4
+cell.window = 46,46
+p1.cursor.startcell =0,0
+p1.cursor.active.spr =2,0
+p1.cursor.done.spr =2,0
+p1.cursor.move.snd =100,0
+p1.cursor.done.snd =100,1
+p1.random.move.snd =100,0
+p2.cursor.startcell =0,6
+p2.cursor.active.spr =2,1
+p2.cursor.done.spr =2,1
+p2.cursor.blink =1
+p2.cursor.move.snd =100,0
+p2.cursor.done.snd =100,1
+p2.random.move.snd =100,0
+random.move.snd.cancel =0
+stage.move.snd =100,0
+stage.done.snd =100,1
+cancel.snd =100,2
+ ;cell portrait
+portrait.spr = 9000,0 
+portrait.offset = 3,3
+portrait.scale = .4,.4
+title.offset = 640,56     
+title.font = -1      
+ ;Big portrait
+p1.face.spr = 9000,1
+p1.face.offset =143,83
+p1.face.scale =.5,.5
+p1.face.facing =1
+p1.face.window = 143,83, 383,363
+p2.face.spr = 9000,1
+p2.face.offset = 1136,83
+p2.face.scale =.5,.5
+p2.face.facing =-1
+p2.face.window = 897,83, 1137,363
+ ;Name
+p1.name.offset =150,406
+p1.name.font =8,0,1,0,0,0
+p1.name.spacing = 0,54
+p2.name.offset =1129,406
+p2.name.font =8,0,-1,0,0,0
+p2.name.spacing = 0,54
+ ;Stage Select
+stage.pos =640,50
+stage.active.font =8,0,0,238,203,0
+stage.active2.font =8,0,0
+stage.done.font =8,0,0
+ ;Team menu
+teammenu.move.wrapping =0
+p1.teammenu.pos =430, 460
+p1.teammenu.bg.spr = 3,4
+p1.teammenu.selftitle.font =6,0, 1,0,0,0
+p1.teammenu.selftitle.text =Select Team Mode
+p1.teammenu.enemytitle.font =6,0, 1,0,0,0
+p1.teammenu.enemytitle.text =Enemy Team Mode
+p1.teammenu.move.snd =100,0
+p1.teammenu.value.snd =100,0
+p1.teammenu.done.snd =100,1
+p1.teammenu.item.offset =0,20
+p1.teammenu.item.spacing =0,15
+p1.teammenu.item.font =6,0, 1,0,0,0
+p1.teammenu.item.active.font =6,0,1,228,160,1
+p1.teammenu.item.active2.font =6,0, 1,228,160,1
+p1.teammenu.item.cursor.offset =-10, 0
+p1.teammenu.item.cursor.anim =180
+p1.teammenu.value.icon.offset =60,-5
+p1.teammenu.value.icon.spr =3,2
+p1.teammenu.value.empty.icon.offset =60,-5
+p1.teammenu.value.empty.icon.spr =3,3
+p1.teammenu.value.spacing =15,0
+ ;P2 team
+p2.teammenu.pos =850, 460
+p2.teammenu.bg.spr =3,5
+p2.teammenu.selftitle.font =6,0, -1,0,0,0
+p2.teammenu.selftitle.text =Select Team Mode
+p2.teammenu.enemytitle.font =6,0, -1,0,0,0
+p2.teammenu.enemytitle.text =Enemy Team Mode
+p2.teammenu.move.snd =100,0
+p2.teammenu.value.snd =100,0
+p2.teammenu.done.snd =100,1
+p2.teammenu.item.offset =0,20
+p2.teammenu.item.spacing =0,15
+p2.teammenu.item.font =6,0,-1,0,0,0
+p2.teammenu.item.active.font =6,0,-1,228,160,1
+p2.teammenu.item.active2.font =6,0, -1,228,160,1
+p2.teammenu.item.cursor.offset =10, 0
+p2.teammenu.item.cursor.anim =190
+p2.teammenu.value.icon.offset =-60,-5
+p2.teammenu.value.icon.spr =3,2
+p2.teammenu.value.empty.icon.offset =-60,-5
+p2.teammenu.value.empty.icon.spr =3,3
+p2.teammenu.value.spacing =-29,0
+
+; Debug screen element
+;sysexplod0.text =
+;sysexplod0.font =
+
+[Begin Action 160] ;P1 active cursor
+160,6, 0,0, 1
+160,5, 0,0, 1
+160,4, 0,0, 1
+160,3, 0,0, 1
+160,2, 0,0, 1
+160,1, 0,0, 1
+160,0, 0,0, 1
+
+[Begin Action 170] ;P2 active cursor
+170,3, 0,0, 1
+170,2, 0,0, 1
+170,1, 0,0, 1
+170,0, 0,0, 1
+170,6, 0,0, 1
+170,5, 0,0, 1
+170,4, 0,0, 1
+
+[Begin Action 180] ;P1 Team mode cursor
+180,0, 0,0, 1
+180,0, 3,0, 1
+180,0, 6,0, 1
+180,0, 9,0, 1
+180,0,12,0, 1
+180,0,15,0, 1
+180,0,18,0, 1
+180,0,21,0, 1
+
+[Begin Action 190] ;P2 Team mode cursor
+190,0, 0,0, 1
+190,0,-3,0, 1
+190,0,-6,0, 1
+190,0,-8,0, 1
+190,0,-12,0, 1
+190,0,-15,0, 1
+190,0,-18,0, 1
+190,0,-21,0, 1
+
+[SelectBGdef]
+
+[SelectBG 0] 
+type  = normal
+spriteno = 3,0
+layerno = 0
+tile  = 1,1
+velocity = -0.5,-1
+trans = addalpha
+
+[SelectBG 1] 
+type  = normal
+spriteno = 3,1
+layerno = 0
+mask = 1
+
+[VS Screen]
+time = 580
+fadein.time = 15
+fadeout.time = 15
+;Match text in arcade modes
+;match.text = "Match %i"  
+;match.offset = 20, 709
+;match.font = 2,0,1
+;Big portraits
+p1.spr = 9000,1
+p1.offset = 150,150
+p1.facing = 1
+p1.scale = .75,.75
+p1.window = 150,150, 510,570
+p2.spr = 9000,1
+p2.offset = 1129,150
+p2.facing = -1
+p2.scale = .75,.75
+p2.window = 769,150, 1130,570
+;Names
+;p1.name.pos  =5,196
+;p1.name.font =7,0,1,0,0,0
+;p1.name.spacing = 0,-69
+;p2.name.pos  =1275,196
+;p2.name.font =7,0,-1,0,0,0
+;p2.name.spacing = 0,-69
+
+;VS Match up screen background
+[VersusBGdef] 
+
+[VersusBG BG] 
+type  = normal
+spriteno = 4,0
+start = 0,0
+tile  = 1,1
+velocity = 0.5,-1
+
+[VersusBG 1] 
+type  = normal
+spriteno = 4,1
+layerno = 0
+start = 0, 0
+mask = 1
+
+;[VersusBG 4] ;VS Logo Shadow
+;type  = anim
+;actionno = 201
+;layerno = 1 ; Front
+;start = -18,300
+;velocity = .25,0
+
+;[VersusBG 5] ;VS Logo
+;type  = anim
+;actionno = 200
+;layerno = 1 ; Front
+;start = 0,300
+
+;[Begin Action 200]
+;101,1, 0,0, 1
+
+;[Begin Action 201]
+;201,0,-70,0, 1, , S
+;201,0,-60,0, 1, , S
+;201,0,-50,0, 1, , S
+;201,0,-40,0, 1, , S
+;201,0,-30,0, 1, , S
+;201,0,-20,0, 1, , S
+;201,0,-13,0, 1, , S
+;201,0, -8,0, 1, , S
+;201,0, -5,0, 1, , S
+;201,0, -2,0, 1, , S
+;201,0, -1,0, 1, , S
+;201,0, 0,0, -1, , S
+
+[Demo Mode]
+enabled =0
+select.enabled =0
+vsscreen.enabled =0
+title.waittime =1000
+fight.endtime =1500
+fight.playbgm =1
+fight.bars.display =0
+intro.waitcycles =1
+debuginfo =0
+
+[Continue Screen]
+enabled =1
+pos = 640,240             
+continue.text = "CONTINUE?"
+continue.font = 1,0,0
+continue.offset = 0,0
+;Inactive and active (selected) YES/NO text
+yes.text = "YES"
+yes.font = 1,0,0, 128,128,128
+yes.offset = -80, 60
+yes.active.text = "YES"
+yes.active.font = 1,3,0
+yes.active.offset = -80, 60
+no.text = "NO"
+no.font = 1,0,0, 128,128,128
+no.offset = 80, 60
+no.active.text = "NO"
+no.active.font = 1,3,0
+no.active.offset = 80, 60
+
+[Game Over Screen]
+enabled =1
+time = 360
+storyboard =  gameover.def
+
+[Victory Screen]
+enabled =1
+time = 530
+fadein.time = 15
+fadeout.time = 15
+;Winner's portrait and name
+p1.offset = 150,150
+p1.spr = 9000,1
+p1.facing = 1
+p1.scale = .75,.75
+p1.window = 150,150, 510,570
+;p1.name.offset = 20,180
+;p1.name.font = 3,0,1
+;Win quote text
+;winquote.text = "Congratulation!" 
+;winquote.offset = 40,615
+;winquote.font = 5,0,1
+;winquote.window = 38,521, 1241,708
+;winquote.textwrap = w    
+
+;Victory screen background
+[VictoryBGdef] 
+;bgclearcolor = 255,255,255
+
+[VictoryBG BG]
+type = normal
+spriteno = 4,0
+tile  = 1,1
+velocity = -1,-.5
+layerno = 0
+trans = addalpha
+
+[VictoryBG 1]
+type = normal
+spriteno = 5,0
+velocity = 0,0
+layerno = 0
+mask = 1
+
+
+
+;Win screen definition
+[Win Screen]
+enabled = 1              
+wintext.text = "L"
+wintext.font = 9,0,0
+wintext.offset = 640,100
+wintext.displaytime = -1
+wintext.layerno = 2
+fadein.time = 32
+pose.time = 300
+fadeout.time = 64
+
+;Game ending screen definition
+[Default Ending]
+enabled =1
+storyboard = Jump Ultimate Stars Mugen Thanks.def
+
+;Ending credits screen definition
+[End Credits]
+enabled =0
+storyboard =
+
+;Survival mode results screen definition
+[Survival Results Screen]
+enabled = 1
+winstext.text = "Rounds survived: %i"  ;Use %i for win counter
+winstext.font = 5,0,0
+winstext.offset = 640,240
+winstext.displaytime = -1
+winstext.layerno = 2
+fadein.time = 32
+show.time = 300
+fadeout.time = 64
+roundstowin = 5
+
+;Options screen definition
+[Option Info]
+fadein.time = 10
+fadeout.time = 10
+title.offset = 640,38
+title.font = 8,0,0
+cursor.move.snd =100,0
+cursor.done.snd =100,1
+cancel.snd =100,2
+
+;Options screen background
+[OptionBGdef] 
+
+[OptionBG 1]
+type  = normal
+spriteno = 1,0
+start = 0,0
+tile  = 1,1
+velocity = -0, -0
+

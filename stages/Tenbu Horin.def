@@ -1,0 +1,746 @@
+;--------------------------------------------------------
+[Info]
+name = "El Tesoro del Cielo"
+displayname="Tenbu Horin"
+author = "Daniel's"
+mugenversion = 1.1
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -5;MIN_X
+boundright = 5;Max_Xwawawa
+boundhigh = -240;MIN_Y -
+boundlow = 0 ;MAX_Y 
+tension 	= 200;200;h_dist
+tensionhigh = 400 ;top_dist
+tensionlow = 60;bottom_dist
+verticalfollow= .8 ;cercanía
+floortension = 0 ;v_dist
+overdrawhigh =80
+overdrawlow = 80
+cuthigh = 35
+cutlow = 25
+zoomin = .9
+zoomout = .47
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+p1startx = -200     ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx =200
+p2starty = 0
+p2facing = -1
+
+;--- Player 3 ----
+p3startx = -300
+p3starty = 0
+p3facing = 1
+
+;--- Player 4 ---
+p4startx = 300
+p4starty = 0
+p4facing = -1
+
+;--- Common ---
+leftbound  = -4000;Left bound (x-movement)
+rightbound = 4000;Right bound
+    
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0     
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+screenleft =105
+screenright =105
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 400
+autoturn = 1
+resetBG = 0
+localcoord =800,450
+xscale = 1
+yscale = 1
+
+;--------------------------------------------------------
+[Shadow]
+
+intensity =128
+color = 0,0,0
+yscale = .4
+fade.range = -400,-100
+xshear =0
+
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 0
+
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/El tesoro del cielo.mp3
+
+;========================================================
+
+;-------------------------------------
+[BGdef]
+spr = stages/Tenbu Horin.sff
+debugbg = 0
+
+
+;----------------------------fondo-------------------------------------------------------------
+
+[BG galaxi]
+type=normal
+spriteno = 0,12
+start =0,700
+delta = .1,.1
+mask = 1
+layerno = 0
+trans = none
+
+;------------------------
+
+
+;stars----
+
+[BG Stars]
+type = anim
+actionno  = 4
+start = 0,0
+delta =  .1,.1
+scalestart=1,1
+tile=1,1
+tilespacing=500,50
+
+
+
+;----------------------
+
+[BG Shooting_Star1]
+type  = anim
+actionno = 50
+layerno = 0
+start = 700, -1500
+velocity = -55, 10
+delta = .2, .2
+tile  = 1, 1
+tilespacing = 10308,6300
+
+[BG Shooting_Star2]
+type  = anim
+actionno = 51
+layerno = 0
+start = 5750, -4500
+velocity = 55, 10
+delta = .15,.15
+tile  = 1, 1
+tilespacing = 10308,6300
+scalestart=.6,.6
+
+[BG Shooting_Star3]
+type  = anim
+actionno = 52
+layerno = 0
+start =100, -1000
+velocity = -55, 10
+delta = .12, .12
+tile  = 1, 1
+tilespacing = 10308,6300
+scalestart=.5,.5
+
+[BG Shooting_Star4]
+type  = anim
+actionno = 53
+layerno = 0
+start = 3000, -2500
+velocity = 55, 10
+delta = .23, .23
+tile  = 1, 1
+tilespacing = 10308,6300
+scalestart=.8,.8
+
+[BG Shooting_Star5]
+type  = anim
+actionno = 54
+layerno = 0
+start = 4000, -3000
+velocity = -55, 10
+delta = .1,.1
+tile  = 1, 1
+tilespacing = 10308,6300
+scalestart=.4,.4
+
+
+;------------room------------------
+
+
+
+[BG room]
+type  =normal
+spriteno = 0,0
+start =0,540; 
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+scalestart = 1,1
+
+
+
+;
+;
+[BG room__capa1]
+type  =normal
+spriteno = 0,1
+start =0,540;
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+scalestart = 1,1
+id=1
+
+[BG room__capa2]
+type  =normal
+spriteno = 0,2
+start =0,540;
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+scalestart = 1,1
+id=2
+
+
+[BG room__capa3]
+type  =normal
+spriteno = 0,3
+start =0,540;
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+scalestart = 1,1
+id=3
+
+[BG room__capa4]
+type  =normal
+spriteno = 0,4
+start =0,540;
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+scalestart = 1,1
+id=4
+
+[BG room__capa5]
+type  =normal
+spriteno = 0,5
+start =0,540;
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+scalestart = 1,1
+id=5
+
+
+[BG room__capa6]
+type  =normal
+spriteno = 0,6
+start =0, 540;
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+scalestart = 1,1
+id=6
+
+[BG room__capa7]
+type  =normal
+spriteno = 0,7
+start =0,540;
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+scalestart = 1,1
+id=7
+
+
+
+[BG room__capa8]
+type  =normal
+spriteno = 0,8
+start =0,540;
+delta = 1,1
+mask = 1
+layerno = 1
+trans = none
+scalestart = 1,1
+id=8
+
+[BG room__capa9]
+type  =normal
+spriteno = 0,9
+start =0, 540;
+delta = 1,1
+mask = 1
+layerno = 1
+trans = none
+scalestart = 1,1
+id=9
+
+[BG room__capa10]
+type  =normal
+spriteno = 0,10
+start =0,540;
+delta = 1,1
+mask = 1
+layerno = 1
+trans = none
+scalestart = 1,1
+id=10
+
+
+
+
+
+
+;---------------------------------intro-----------------------------------------------------------
+
+[BG intro]
+type  =anim
+actionno=1
+start =0,540;
+mask = 0
+ID = 11
+;
+[BG aura]
+type=anim
+actionno=3
+start = -155,0
+delta = 1,1
+scalestart=.55,.65
+;
+[BG shaka_sprite]
+type  =normal
+spriteno = 0,11
+start =0, 540
+delta = 1,1
+mask = 1
+layerno = 0
+trans = none
+sin.y = 5,110,0
+scalestart=.65,.65
+;
+[BG cosmo]
+type=anim
+actionno=2
+start = -228,0
+delta = .65,.65
+
+
+
+
+;------------------------------------------amim-------------------------------------------------------
+
+; intro
+[Begin Action 1]
+1,15, 0,0, 300
+1,16, 0,0, 12
+1,11, 0,0, 12
+1,15, 0,0, 12
+1,16, 0,0, 12
+1,11, 0,0, 8
+1,10, 0,0, 8
+1,15, 0,0, 10
+1,16, 0,0, 10
+1,11, 0,0, 10
+1,10, 0,0, 8
+1,15, 0,0, 8
+1,16, 0,0, 4, , AS220D220
+1,11, 0,0, 4, , AS220D220
+LoopStart
+-1,0, 0,0, 1
+
+; aura
+[Begin Action 3]
+-1,0, 0,0, 85
+2,0, 0,0, 3, , A
+2,1, 0,0, 3, , A
+2,2, 0,0, 3, , A
+2,3, 0,0, 3, , A
+2,4, 0,0, 3, , A
+2,5, 0,0, 3, , A
+2,6, 0,0, 3, , A
+2,7, 0,0, 3, , A
+2,8, 0,0, 3, , A
+2,9, 0,0, 3, , A
+2,10, 0,0, 3, , A
+2,11, 0,0, 3, , A
+2,12, 0,0, 3, , A
+2,13, 0,0, 3, , A
+2,14, 0,0, 3, , A
+2,15, 0,0, 3, , A
+2,16, 0,0, 3, , A
+2,17, 0,0, 3, , A
+2,18, 0,0, 3, , A
+2,19, 0,0, 3, , A
+2,20, 0,0, 3, , A
+2,21, 0,0, 3, , A
+2,22, 0,0, 3, , A
+2,23, 0,0, 3, , A
+2,24, 0,0, 3, , A
+2,25, 0,0, 3, , A
+2,26, 0,0, 3, , A
+2,27, 0,0, 3, , A
+2,28, 0,0, 3, , A
+2,29, 0,0, 3, , A
+LoopStart
+2,30, 0,0, 3, , A
+2,31, 0,0, 3, , A
+2,32, 0,0, 3, , A
+2,33, 0,0, 3, , A
+2,34, 0,0, 3, , A
+2,35, 0,0, 3, , A
+
+; cosmo
+[Begin Action 2]
+-1,0, 0,0, 275
+3,0, 0,0, 2, , A
+3,1, 0,0, 2, , A
+3,2, 0,0, 2, , A
+3,3, 0,0, 2, , A
+3,4, 0,0, 2, , A
+3,5, 0,0, 2, , A
+3,6, 0,0, 2, , A
+3,7, 0,0, 2, , A
+3,8, 0,0, 2, , A
+3,9, 0,0, 2, , A
+3,10, 0,0, 2, , A
+3,11, 0,0, 2, , A
+3,12, 0,0, 2, , A
+3,13, 0,0, 2, , A
+3,14, 0,0, 2, , A
+3,15, 0,0, 2, , A
+3,16, 0,0, 2, , A
+3,17, 0,0, 2, , A
+3,18, 0,0, 2, , A
+3,19, 0,0, 2, , A
+3,20, 0,0, 2, , A
+3,21, 0,0, 2, , A
+3,22, 0,0, 2, , A
+3,23, 0,0, 2, , A
+3,24, 0,0, 2, , A
+3,25, 0,0, 2, , A
+3,26, 0,0, 2, , A
+3,27, 0,0, 2, , A
+3,28, 0,0, 2, , A
+3,29, 0,0, 2, , A
+3,30, 0,0, 2, , A
+3,31, 0,0, 2, , A
+3,32, 0,0, 2, , A
+3,33, 0,0, 2, , A
+3,34, 0,0, 2, , A
+3,35, 0,0, 2, , A
+3,36, 0,0, 2, , A
+3,37, 0,0, 2, , A
+3,38, 0,0, 2, , A
+3,39, 0,0, 2, , A
+3,40, 0,0, 2, , A
+3,41, 0,0, 2, , A
+3,42, 0,0, 2, , A
+LoopStart
+-1,0, 0,0, 1
+
+;stars
+[Begin Action 4]
+6,0,0,0,5,,A
+6,1,0,0,5,,A
+6,2,0,0,5,,A
+6,3,0,0,5,,A
+6,4,0,0,5,,A
+6,5,0,0,5,,A
+6,6,0,0,5,,A
+6,7,0,0,5,,A
+6,8,0,0,5,,A
+6,9,0,0,5,,A
+6,10,0,0,5,,A
+6,11,0,0,5,,A
+6,12,0,0,5,,A
+6,13,0,0,5,,A
+6,14,0,0,5,,A
+6,15,0,0,5,,A
+6,16,0,0,5,,A
+6,17,0,0,5,,A
+6,18,0,0,5,,A
+6,19,0,0,5,,A
+6,20,0,0,5,,A
+6,21,0,0,5,,A
+6,22,0,0,5,,A
+6,23,0,0,5,,A
+6,24,0,0,5,,A
+6,25,0,0,5,,A
+6,26,0,0,5,,A
+6,27,0,0,5,,A
+6,28,0,0,5,,A
+6,29,0,0,5,,A
+6,30,0,0,5,,A
+6,31,0,0,5,,A
+6,32,0,0,5,,A
+6,33,0,0,5,,A
+6,34,0,0,5,,A
+6,35,0,0,5,,A
+6,36,0,0,5,,A
+6,37,0,0,5,,A
+6,38,0,0,5,,A
+6,39,0,0,5,,A
+6,40,0,0,5,,A
+6,41,0,0,5,,A
+6,42,0,0,5,,A
+6,43,0,0,5,,A
+6,44,0,0,5,,A
+6,45,0,0,5,,A
+6,46,0,0,5,,A
+6,47,0,0,5,,A
+6,48,0,0,5,,A
+6,49,0,0,5,,A
+6,50,0,0,5,,A
+6,51,0,0,5,,A
+6,52,0,0,5,,A
+6,53,0,0,5,,A
+6,54,0,0,5,,A
+6,55,0,0,5,,A
+6,56,0,0,5,,A
+6,57,0,0,5,,A
+6,58,0,0,5,,A
+6,59,0,0,5,,A
+6,60,0,0,5,,A
+6,61,0,0,5,,A
+6,62,0,0,5,,A
+6,63,0,0,5,,A
+6,64,0,0,5,,A
+6,65,0,0,5,,A
+6,66,0,0,5,,A
+6,67,0,0,5,,A
+6,68,0,0,5,,A
+6,69,0,0,5,,A
+6,70,0,0,5,,A
+6,71,0,0,5,,A
+6,72,0,0,5,,A
+6,73,0,0,5,,A
+6,74,0,0,5,,A
+
+; starFugaz1
+[Begin Action 50]
+50,0, 0,0, 40,,AS256D256,0.8,0.2,10
+
+
+; starFugaz2
+[Begin Action 51]
+50,1, 0,0, 40,,AS200D256,0.8,0.2,170
+
+
+; starFugaz3
+[Begin Action 52]
+50,2, 0,0, 40, , A, 0.8,0.2, 10
+
+; starFugaz4
+[Begin Action 53]
+50,3, 0,0, 40, , AS200D256, 0.8,0.2, 170
+
+; starFugaz5
+[Begin Action 54]
+50,4, 0,0, 40, , A, 0.8,0.2, 10
+
+
+
+
+;------------------------------------------------BG controls----------------------------------------
+
+
+;intro shake----------------
+
+[BGCtrl Shake]
+type = SinY
+time = 90
+value = 3,6,0
+ctrlID=11
+
+[BGCtrl stop Shake]
+type = SinY
+time = 420
+value = 0,0,0
+ctrlID=11
+
+;---------------------
+
+
+;cuadros_Sinusoidal-------------------------
+
+
+[BGCtrl capa1]
+type = Sinx
+time = 990
+value = 7,110,0
+ctrlID=1
+
+[BGCtrl capa2]
+type = SinX
+time = 1020
+value = -7,110,0
+ctrlID=2
+
+
+
+[BGCtrl capa3]
+type = SinY
+time = 990
+value = 7,110,0
+ctrlID=3
+
+
+;-------buda
+
+[BGCtrl capa4]
+type = SinX
+time = 1000
+value = 7,110,0
+ctrlID=4
+
+[BGCtrl capa4]
+type = SinY
+time = 1000
+value = -7,110,0
+ctrlID=4
+
+;piso---
+
+[BGCtrl capa5,8]
+type = SinY
+time = 990
+value = 6,110,0
+ctrlID=5,8
+
+[BGCtrl capa6,9]
+type = SinY
+time = 1020
+value = 6,110,0
+ctrlID=6,9
+
+[BGCtrl capa7,10]
+type = SinY
+time = 990
+value = -6,110,0
+ctrlID=7,10
+
+
+;-------------------
+
+
+
+
+
+
+;cuadros_Vel--------------------
+
+[BGCtrlDef cuadros]
+ctrlID=1,2,3
+looptime = 7000
+
+
+
+[BGCtrl up]
+type = VelSet
+time = 2000
+x=0
+y=-.1
+ctrlID=1,2,3,4
+
+[BGCtrl down]
+type = VelSet
+time = 4000
+x=0
+y=.1
+ctrlID=1,2,3,4
+
+
+
+[BGCtrl stay]
+type = VelSet
+time = 6000
+x=0
+y=0
+ctrlID=1,2,3,4
+;
+;
+;;---piso
+[BGCtrlDef cuadros_piso]
+ctrlID=5,6,7,8,9,10
+looptime = 7000
+
+
+[BGCtrl up]
+type = VelSet
+time = 2000
+x=0
+y=-.02
+ctrlID=5,6,7,8,9,10
+
+[BGCtrl down]
+type = VelSet
+time = 4000
+x=0
+y=.02
+ctrlID=5,6,7,8,9,10
+
+
+
+[BGCtrl stay]
+type = VelSet
+time = 6000
+x=0
+y=0
+ctrlID=5,6,7,8,9,10
+
+
+;----------
+
+[BGCtrl invisible]
+type = Visible
+time = 0
+value=0
+ctrlID=8,9,10
+
+[BGCtrl visible]
+type = Visible
+time = 990
+value=1
+ctrlID=8,9,10
+
+
+
+
+
+
+
+
+

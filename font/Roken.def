@@ -1,0 +1,19 @@
+[FNT v2]
+; FNT v2 version number.  Don't change this.
+fntversion = 2,00
+; Name of this font.
+name = "Roken"
+; Font author
+author = "Microsoft"
+
+[Def]
+Type = bitmap
+BankType = palette
+Size = 20,60
+Spacing = 1,1
+Offset = 0,1
+File = Roken.sff
+
+
+; Note: All units are in pixels.
+; Text rendered with truetype fonts may be ASCII or UTF-8
